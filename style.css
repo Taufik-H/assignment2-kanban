@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.bg {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  background-image: url("./assets/bg.png");
+}
+.card {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 900px;
+  margin: 100px auto;
+  display: flex;
+  gap: 10px;
+  box-shadow: 7px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.todo-card {
+  padding: 10px;
+  background-color: #fff;
+  width: 300px;
+}
+
+.todo-title {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+  font-size: 16px;
+  color: #575757;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.todo-input {
+  display: flex;
+  gap: 10px;
+}
+.todo-input input {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 80%;
+  font-size: 16px;
+  color: #575757;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.todo-input button {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 20%;
+  font-size: 16px;
+  color: #575757;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.todo-input button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #575757;
+  transition: all;
+  transition-duration: 0.5s;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+  color: #575757;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+.todo-item p {
+  height: 100%;
+  width: 75%;
+}
+.todo-action {
+  display: flex;
+  gap: 10px;
+}
+.todo-action img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.todo-item:active {
+  opacity: 0.5;
+}
+.item-dragging {
+  background-color: #292929;
+  color: #fff;
+  cursor: move;
+}
